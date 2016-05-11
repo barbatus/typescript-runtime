@@ -1,6 +1,6 @@
 Package.describe({
   name: 'barbatus:typescript-runtime',
-  version: '0.1.1',
+  version: '0.1.2',
   summary: 'TypeScript Runtime for Meteor',
   git: 'https://github.com/barbatus/typescript-runtime',
   documentation: null
@@ -14,8 +14,6 @@ Package.onUse(function(api) {
   api.export([
     '__extends', '__decorate', '__metadata',
     '__param', '__awaiter', '__assign']);
-
-  api.imply('promise@0.4.8');
 });
 
 Package.onTest(function(api) {
