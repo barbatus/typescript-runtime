@@ -1,19 +1,25 @@
 Package.describe({
   name: 'barbatus:typescript-runtime',
-  version: '0.1.2',
+  version: '1.0.0',
   summary: 'TypeScript Runtime for Meteor',
   git: 'https://github.com/barbatus/typescript-runtime',
   documentation: null
 });
 
+Npm.depends({
+  'tslib': 'https://github.com/Microsoft/tslib/tarball/0a43c5c4d246b569178ff41b71313f63a9c8fa58'
+});
+
 Package.onUse(function(api) {
   api.versionsFrom('1.2.0.1');
+
+  api.use(['ecmascript@0.4.2']);
 
   api.addFiles(['typescript-helpers.js']);
 
   api.export([
     '__extends', '__decorate', '__metadata',
-    '__param', '__awaiter', '__assign']);
+    '__param', '__awaiter', '__assign', '__generator']);
 });
 
 Package.onTest(function(api) {
