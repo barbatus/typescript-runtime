@@ -7,7 +7,7 @@ Package.describe({
 });
 
 Npm.depends({
-  'tslib': 'https://github.com/Microsoft/tslib/tarball/0a43c5c4d246b569178ff41b71313f63a9c8fa58'
+  'tslib': 'https://github.com/Microsoft/tslib/tarball/6a883a325b50a9969fe7738ac7461a03cd570363'
 });
 
 Package.onUse(function(api) {
